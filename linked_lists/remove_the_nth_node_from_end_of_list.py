@@ -10,17 +10,19 @@ The problem is resolved in a single pass using the Two-Pointer Technique with a 
 #         self.val = val
 #         self.next = next
 
-def removeNthFromEnd(self, head, n):
+def removeNthFromEnd(head, n):
     """
     :type head: Optional[ListNode]
     :type n: int
     :rtype: Optional[ListNode]
     """
     
-    slow = head
-    fast = head
-
-    # This is to generate the gap of n between slow and fast
+    dummy = ListNode(0)
+    dummy.next = head
+    
+    slow = dummy
+    fast = dummy
+    
     for _ in range(n+1):
         fast = fast.next
     
@@ -30,6 +32,6 @@ def removeNthFromEnd(self, head, n):
         
     slow.next = slow.next.next
     
-    return head
+    return dummy.next
             
         
