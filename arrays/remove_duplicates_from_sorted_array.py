@@ -1,6 +1,6 @@
 # https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/727/
 
-def removeDuplicates(self, nums):
+def removeDuplicates(nums):
     """
     :type nums: List[int]
     :rtype: int
