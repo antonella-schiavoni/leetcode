@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
 
-def maxProfit(self, prices):
+def maxProfit(prices):
     """
     :type prices: List[int]
     :rtype: int
