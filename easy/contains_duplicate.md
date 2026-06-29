@@ -49,4 +49,4 @@ La **Solución 1** es mejor en la práctica. Aunque ambas tienen la misma comple
 
 La **Solución 2** siempre construye el set completo antes de comparar, sin importar si el duplicado estaba en la posición 1 o en la última. Es más legible y suficiente para entrevistas donde la claridad importa, pero no es óptima en runtime.
 
-> En una entrevista: mencioná el one-liner como solución obvia, luego proponé el loop como optimización para casos con duplicados tempranos. Eso muestra que pensás en casos promedio, no solo en worst case.
+> Para la entrevista: el one-liner es la solución obvia, el loop como optimización para casos con duplicados con early-exit. 
